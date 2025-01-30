@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Transformation: Scaling, Normalization, and Encoding</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Data Transformation: Scaling, Normalization, and Encoding</h1>
+      <p><strong>Published on:</strong> January 28, 2025</p>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>Data transformation is a crucial preprocessing step in the data mining pipeline. It involves converting raw data into a format that is better suited for analysis and modeling. In this blog, we explore three key data transformation techniques: scaling, normalization, and encoding, which are essential for improving model performance and ensuring consistency in the dataset.</p>
+      </section>
+
+      <section>
+        <h2>Scaling</h2>
+        <p>Scaling is the process of adjusting the range of numerical data. Models like linear regression, k-nearest neighbors (KNN), and support vector machines (SVM) often require scaled data to function properly. Common scaling techniques include:</p>
+        <ul>
+          <li><strong>Min-Max Scaling:</strong> Scales the data to a fixed range, typically [0, 1]. It is useful when you want to ensure that all features contribute equally to the model.</li>
+          <li><strong>Standardization (Z-score Normalization):</strong> Centers the data around the mean (zero) and scales it based on standard deviation. This technique is used when data has varying units or ranges.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Normalization</h2>
+        <p>Normalization is the process of transforming data into a common scale without distorting differences in the ranges of values. It is especially important when working with algorithms that are sensitive to the magnitude of the data, such as neural networks and clustering algorithms. Key normalization techniques include:</p>
+        <ul>
+          <li><strong>Min-Max Normalization:</strong> This technique resizes the data into a specified range, usually [0, 1], preserving the relative relationships between data points.</li>
+          <li><strong>Robust Scaler:</strong> This method scales data using the interquartile range (IQR), which is less sensitive to outliers than Min-Max normalization.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Encoding Categorical Data</h2>
+        <p>Many machine learning algorithms require numerical input, but real-world data often contains categorical variables. Encoding is the process of converting categorical data into numerical form. Common encoding methods include:</p>
+        <ul>
+          <li><strong>One-Hot Encoding:</strong> This method creates binary columns for each category. It is suitable when the categorical variable has no intrinsic ordering, such as colors or cities.</li>
+          <li><strong>Label Encoding:</strong> Assigns a unique integer to each category. It is suitable when the categorical variable has an inherent order, such as "low", "medium", and "high".</li>
+          <li><strong>Ordinal Encoding:</strong> Similar to label encoding but used specifically for ordinal data, where there is a meaningful order among categories.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Best Practices for Data Transformation</h2>
+        <ul>
+          <li><strong>Understand Your Data:</strong> Before applying any transformation, thoroughly understand your data to choose the most appropriate techniques.</li>
+          <li><strong>Test Different Methods:</strong> Experiment with different scaling, normalization, and encoding techniques to determine the best fit for your data and model.</li>
+          <li><strong>Apply Transformations Consistently:</strong> When applying transformations, make sure to apply them consistently across training, validation, and test datasets to avoid data leakage or inconsistencies.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Conclusion</h2>
+        <p>Data transformation techniques like scaling, normalization, and encoding are essential for preparing your data for analysis and machine learning models. By applying the appropriate transformations, you ensure that your models perform optimally and that your data is in a suitable format for mining valuable insights.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
